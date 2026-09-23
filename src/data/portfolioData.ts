@@ -95,9 +95,9 @@ export const PERSONAL_INFO = {
   tagline: "Specializing in 5G Cellular Handover Optimization, Network Security, SDN & Distributed Cloud Systems",
   location: "Thunder Bay, Ontario, Canada",
   bio: "Computer Science and Engineering graduate from Green University of Bangladesh with over two years of rigorous academic research experience and multiple peer-reviewed publications. Passionate about 5G mobility management, network virtualization, and cybersecurity. Founding Chair of IEEE Computer Society Student Branch Chapter at GUB, global member of the Internet Society, and certified in Cisco, Red Hat Linux, and MikroTik networking architectures.",
-  email: "mushfiq.style@gmail.com",
+  email: "rakib248arin@gmail.com",
   secondaryEmail: "rakib248arin@gmail.com",
-  phone: "+880 1700-000000",
+  phone: "+1 807 707 *****",
   educationHighlight: "B.Sc. in CSE (Dec 2020), Green University of Bangladesh",
   thesisTitle: "Mobility Management in 5G Cellular Network Based on E-MOORA Algorithm",
   researchInterests: [
