@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, FileText, ArrowRight, ShieldCheck, Award, Network, GraduationCap } from 'lucide-react';
+import { ExternalLink, FileText, ArrowRight, ShieldCheck, Award, Network, GraduationCap, MapPin } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface HeroProps {
@@ -15,12 +15,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocument, onOpenCV }) => {
           {/* Main Editorial Header Column */}
           <div className="lg:col-span-8 space-y-6">
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-xs text-stone-500 font-medium">
+              <div className="flex flex-wrap items-center gap-2 text-xs text-stone-500 font-medium">
                 <span>Green University of Bangladesh</span>
                 <span aria-hidden="true">·</span>
                 <span>Department of Computer Science & Engineering</span>
                 <span aria-hidden="true">·</span>
                 <span className="text-amber-800 font-semibold">Dec 2020</span>
+                <span aria-hidden="true">·</span>
+                <span className="inline-flex items-center gap-1 text-stone-700 bg-stone-100 border border-stone-200 px-2 py-0.5 rounded text-[11px] font-medium">
+                  <MapPin className="w-3 h-3 text-amber-700" />
+                  {PERSONAL_INFO.location}
+                </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-stone-900 tracking-tight leading-[1.08]">
@@ -143,6 +148,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocument, onOpenCV }) => {
               </div>
 
               <div className="border-t border-stone-100 pt-4 space-y-2.5 text-xs text-stone-600">
+                <div className="flex items-start gap-2">
+                  <span className="font-semibold text-stone-800 shrink-0">Current Location:</span>
+                  <span className="inline-flex items-center gap-1 font-medium text-stone-900">
+                    <MapPin className="w-3 h-3 text-amber-700 shrink-0" />
+                    {PERSONAL_INFO.location}
+                  </span>
+                </div>
                 <div className="flex items-start gap-2">
                   <span className="font-semibold text-stone-800 shrink-0">B.Sc CSE:</span>
                   <span>Green University of Bangladesh (2020)</span>
